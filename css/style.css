@@ -1,3 +1,18 @@
 * {
-    background-color: rgb(139, 202, 139);
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+}
+.board {
+  text-wrap: wrap;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 230, 236);
+  border: 3px solid black;
+  margin: 0;
+  gap: 10px;
 }
