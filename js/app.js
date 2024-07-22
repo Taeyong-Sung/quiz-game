@@ -1,29 +1,45 @@
-/*------- Cached Element References ------*/
-const firstQuizButtonEl = document.querySelector("#firstQuiz");
-const secondQuizButtonEl = document.querySelector("#secondQuiz");
-const mainPageH1El = document.querySelector(".mainPageH1")
-const messageH2El = document.querySelector("#message")
-const imageOfElephantEl = document.querySelector("#picture")
-/*-------- Functions -----------------*/
-firstQuizButtonEl.addEventListener("click", () => {
-    console.log("clicked me")
-    mainPageH1El.textContent = "Guess the correct animal!"
-    messageH2El.textContent = ''
-    firstQuizButtonEl.textContent = 'Elephant'
-    secondQuizButtonEl.textContent = 'Tiger'
-    imageOfElephantEl.src = "../assets/elephant.webp"
+const quiz = [
+  {
+    question: "Who am I?",
+    answers: [
+      { text: "Tae", correct: true },
+      { text: "John", correct: false },
+      { text: "Tommy", correct: false },
+      { text: "Jason", correct: false },
+    ],
+  },
+  {
+    question: "Who are you?",
+    answers: [
+      { text: "Tae", correct: false },
+      { text: "John", correct: true },
+      { text: "Tommy", correct: false },
+      { text: "Jason", correct: false },
+    ],
+  },
+];
+
+/*-------------------------------- Constants --------------------------------*/
+
+/*---------------------------- Variables (state) ----------------------------*/
+let score = 0;
+
+/*------------------------ Cached Element References ------------------------*/
+let selectionEl = document.querySelector(".selection");
+let option1El = document.querySelector("#option1");
+let option2El = document.querySelector("#option2");
+let option3El = document.querySelector("#option3");
+let option4El = document.querySelector("#option4");
+let titleEl = document.querySelector("#title");
+let nextEl = document.querySelector(".nextButton");
+let mainEl = document.querySelector(".main");
+let h2El = document.querySelector("#h2");
+let h1El = document.querySelector(".h1Content");
+
+/*-------------------------------- Functions --------------------------------*/
+//this button will take you to the first quiz
+option1El.addEventListener("click", () => {
+  // console.log('clicked me');
+  h1El.textContent = "Quiz One";
 });
-
-secondQuizButtonEl.addEventListener("click", () => {
-    console.log("clicked mee")
-});
-
-function render() {
-    refreshPage()
-}
-// This is where adding a image tag to HTML making it hidden and clicking button unhides it
-function refreshPage() {
-    mainPageH1El.textContent = "Hello"
-}
-
-
+/*----------------------------- Event Listeners -----------------------------*/
