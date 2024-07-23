@@ -1,7 +1,6 @@
 const image = new Image();
 const quizOne = [
   {
-    image: (image.src = "../assets/pickachu.png"),
     question: "What is the capital of Germany?",
     answers: [
       { text: "Berlin", correct: true },
@@ -60,6 +59,7 @@ const quizTwo = [
     ],
   },
   {
+    image: (image.src = "../assets/eevee.png"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Abra", correct: false },
@@ -69,6 +69,7 @@ const quizTwo = [
     ],
   },
   {
+    image: (image.src = "../assets/meowth.jpg"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Muk", correct: false },
@@ -78,6 +79,7 @@ const quizTwo = [
     ],
   },
   {
+    image: (image.src = "../assets/charizard.png"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Ponyta", correct: false },
@@ -87,6 +89,7 @@ const quizTwo = [
     ],
   },
   {
+    image: (image.src = "../assets/snorlex.jpg"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Slowbro", correct: false },
@@ -124,8 +127,6 @@ option2El.addEventListener("click", () => handleCheckGuess(1));
 option3El.addEventListener("click", () => handleCheckGuess(2));
 option4El.addEventListener("click", () => handleCheckGuess(3));
 /*-------------------------------- Functions --------------------------------*/
-imageEl.height = 250;
-imageEl.width = 250;
 
 function init() {
   answerContainerEl.style.display = "none";
@@ -135,6 +136,7 @@ function init() {
   catergoryContainerEl.style.display = "";
   questionEl.textContent = "";
   h1ContentEl.textContent = "Quiz game";
+  imageEl.src = (image.src = "../assets/quizquiz.jpg")
 }
 
 function handleSelectCategory() {
@@ -174,6 +176,8 @@ catergoryContainerEl.addEventListener("click", () => {
   h1ContentEl.textContent = "";
   returnButtonEl.style.display = "block";
   handleSelectCategory();
+  imageEl.height = 250;
+  imageEl.width = 250;
 });
 
 returnButtonEl.addEventListener("click", init);
