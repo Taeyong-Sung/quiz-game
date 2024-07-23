@@ -106,7 +106,7 @@ const quizTwo = [
 ];
 
 /*-------------------------------- Constants --------------------------------*/
-
+const correctAnswerSound = new Audio('../assets/clapping.wav')
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
 let result = 0;
@@ -173,6 +173,7 @@ function handleCheckGuess(selectedAnswerIdx) {
   // if answer is true, give a point
   if (currentQuestions[currentQuestionIdx].answers[selectedAnswerIdx].correct) {
     score += 1;
+    correctAnswerSound.play()
   }
   // if there are still questions left, advance questionIdx
   if (currentQuestionIdx < currentQuestions.length - 1) {
@@ -206,4 +207,3 @@ quiz2EL.addEventListener("click", () => {
 returnButtonEl.addEventListener("click", init);
 
 init();
-// how to add pictures and toggle through, make new handlecheckguess function?
