@@ -19,8 +19,6 @@ const quizOne = [
   },
 ];
 
-
-
 /*-------------------------------- Constants --------------------------------*/
 // const mainText = "Quiz QUIZ";
 /*---------------------------- Variables (state) ----------------------------*/
@@ -55,7 +53,7 @@ function init() {
   score = 0;
 }
 
-function handleSelectCategory(evt) {
+function handleSelectCategory() {
   // this is where you'll set your questions
   currentQuestions = quizOne;
   renderQuestion();
@@ -71,17 +69,14 @@ function renderQuestion() {
   option4El.textContent = currentQuestions[currentQuestionIdx].answers[3].text;
 }
 
-function handleCheckGuess(evt) {
+function handleCheckGuess(selectedAnswerIdx) {
   // if answer is true, give a point
-  if (currentQuestions[currentQuestionIdx].correct) {
+  if (currentQuestions[currentQuestionIdx].answers[selectedAnswerIdx].correct) {
     score += 1;
-  } else {
-    score == 0;
   }
   // if there are still questions left, advance questionIdx
-  if (currentQuestionIdx < currentQuestions.length) {
+  if (currentQuestionIdx < currentQuestions.length - 1) {
     currentQuestionIdx++;
-    console.log('You scored one!');
     renderQuestion();
   } else {
     console.log(`"Your score is "${score}`);
