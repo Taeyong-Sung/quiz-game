@@ -121,6 +121,8 @@ let h1ContentEl = document.querySelector(".h1Content");
 let catergoryContainerEl = document.querySelector("#category-container");
 let answerContainerEl = document.querySelector("#answer-container");
 let imageEl = document.querySelector(".image");
+let quiz1EL = document.querySelector("#quiz1")
+let quiz2EL = document.querySelector("#quiz2")
 /*----------------------------- Event Listeners -----------------------------*/
 option1El.addEventListener("click", () => handleCheckGuess(0));
 option2El.addEventListener("click", () => handleCheckGuess(1));
@@ -142,6 +144,12 @@ function init() {
 function handleSelectCategory() {
   // this is where you'll set your questions
   currentQuestions = quizOne;
+  renderQuestion();
+}
+
+function handleSelectCategoryTwo() {
+  // this is where you'll set your questions
+  currentQuestions = quizTwo;
   renderQuestion();
 }
 
@@ -170,12 +178,22 @@ function handleCheckGuess(selectedAnswerIdx) {
   }
 }
 
-catergoryContainerEl.addEventListener("click", () => {
+quiz1EL.addEventListener("click", () => {
   catergoryContainerEl.style.display = "none";
   answerContainerEl.style.display = "";
   h1ContentEl.textContent = "";
   returnButtonEl.style.display = "block";
   handleSelectCategory();
+  imageEl.height = 250;
+  imageEl.width = 250;
+});
+
+quiz2EL.addEventListener("click", () => {
+  catergoryContainerEl.style.display = "none";
+  answerContainerEl.style.display = "";
+  h1ContentEl.textContent = "";
+  returnButtonEl.style.display = "block";
+  handleSelectCategoryTwo();
   imageEl.height = 250;
   imageEl.width = 250;
 });
