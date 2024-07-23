@@ -1,7 +1,7 @@
-// const image = new Image()
+const image = new Image();
 const quizOne = [
   {
-    image: image.src = '../assets/pickachu.png',
+    image: (image.src = "../assets/pickachu.png"),
     question: "What is the capital of Germany?",
     answers: [
       { text: "Berlin", correct: true },
@@ -50,48 +50,49 @@ const quizOne = [
 
 const quizTwo = [
   {
+    image: (image.src = "../assets/pickachu.png"),
     question: "What is the name of this Pokemon?",
     answers: [
-      { text: "Berlin", correct: true },
-      { text: "Munich", correct: false },
-      { text: "Frankfurt", correct: false },
-      { text: "London", correct: false },
+      { text: "Pickachu", correct: true },
+      { text: "Bulbasaur", correct: false },
+      { text: "Jigglypuff", correct: false },
+      { text: "Machop", correct: false },
     ],
   },
   {
     question: "What is the name of this Pokemon?",
     answers: [
-      { text: "Venice", correct: false },
-      { text: "Rome", correct: true },
-      { text: "Paris", correct: false },
-      { text: "New York", correct: false },
+      { text: "Abra", correct: false },
+      { text: "Eevee", correct: true },
+      { text: "Ekans", correct: false },
+      { text: "Poliwhirl", correct: false },
     ],
   },
   {
     question: "What is the name of this Pokemon?",
     answers: [
-      { text: "Vancouver", correct: false },
-      { text: "Toronto", correct: false },
-      { text: "Ottawa", correct: true },
-      { text: "Washington", correct: false },
+      { text: "Muk", correct: false },
+      { text: "Doduo", correct: false },
+      { text: "Meowth", correct: true },
+      { text: "Persian", correct: false },
     ],
   },
   {
     question: "What is the name of this Pokemon?",
     answers: [
-      { text: "Florida", correct: false },
-      { text: "California", correct: false },
-      { text: "New york", correct: false },
-      { text: "Washington, D.C", correct: true },
+      { text: "Ponyta", correct: false },
+      { text: "Charmander", correct: false },
+      { text: "Caterpie", correct: false },
+      { text: "Charlizard", correct: true },
     ],
   },
   {
     question: "What is the name of this Pokemon?",
     answers: [
-      { text: "Kyoto", correct: false },
-      { text: "Tokyo", correct: true },
-      { text: "Osaka", correct: false },
-      { text: "Hokkaido", correct: false },
+      { text: "Slowbro", correct: false },
+      { text: "Snorlex", correct: true },
+      { text: "Seel", correct: false },
+      { text: "Dragonite", correct: false },
     ],
   },
 ];
@@ -116,14 +117,15 @@ let questionEl = document.querySelector("#question");
 let h1ContentEl = document.querySelector(".h1Content");
 let catergoryContainerEl = document.querySelector("#category-container");
 let answerContainerEl = document.querySelector("#answer-container");
-let imageEl = document.querySelector('.image')
+let imageEl = document.querySelector(".image");
 /*----------------------------- Event Listeners -----------------------------*/
 option1El.addEventListener("click", () => handleCheckGuess(0));
 option2El.addEventListener("click", () => handleCheckGuess(1));
 option3El.addEventListener("click", () => handleCheckGuess(2));
 option4El.addEventListener("click", () => handleCheckGuess(3));
 /*-------------------------------- Functions --------------------------------*/
-init();
+imageEl.height = 250;
+imageEl.width = 250;
 
 function init() {
   answerContainerEl.style.display = "none";
@@ -142,7 +144,7 @@ function handleSelectCategory() {
 }
 
 function renderQuestion() {
-  imageEl.textContent = currentQuestions[currentQuestionIdx].image;
+  imageEl.src = currentQuestions[currentQuestionIdx].image;
   questionEl.textContent = currentQuestions[currentQuestionIdx].question;
   // console.log(currentQuestions[currentQuestionIdx].answers);
   option1El.textContent = currentQuestions[currentQuestionIdx].answers[0].text;
@@ -176,4 +178,5 @@ catergoryContainerEl.addEventListener("click", () => {
 
 returnButtonEl.addEventListener("click", init);
 
+init();
 // how to add pictures and toggle through, make new handlecheckguess function?
