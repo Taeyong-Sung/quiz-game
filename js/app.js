@@ -107,6 +107,7 @@ const quizTwo = [
 
 /*-------------------------------- Constants --------------------------------*/
 const correctAnswerSound = new Audio("../assets/clapping.wav");
+const wrongAnswerSound = new Audio("../assets/wonrgAnswer.wav");
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
 let result = 0;
@@ -151,17 +152,17 @@ function init() {
   option4El.style.display = "block";
 }
 
-function handleSelectCategory() {
+function handleSelectCategory(quizSelect) {
   // this is where you'll set your questions
-  currentQuestions = quizOne;
+  currentQuestions = quizSelect;
   renderQuestion();
 }
 
-function handleSelectCategoryTwo() {
-  // this is where you'll set your questions
-  currentQuestions = quizTwo;
-  renderQuestion();
-}
+// function handleSelectCategoryTwo() {
+//   // this is where you'll set your questions
+//   currentQuestions = quizTwo;
+//   renderQuestion();
+// }
 
 function renderQuestion() {
   imageEl.src = currentQuestions[currentQuestionIdx].image;
@@ -179,6 +180,8 @@ function handleCheckGuess(selectedAnswerIdx) {
   if (currentQuestions[currentQuestionIdx].answers[selectedAnswerIdx].correct) {
     score += 1;
     correctAnswerSound.play();
+  } else {
+    wrongAnswerSound.play();
   }
   // if there are still questions left, advance questionIdx
   if (currentQuestionIdx < currentQuestions.length - 1) {
@@ -200,7 +203,7 @@ quiz1EL.addEventListener("click", () => {
   answerContainerEl.style.display = "";
   h1ContentEl.textContent = "";
   returnButtonEl.style.display = "block";
-  handleSelectCategory();
+  handleSelectCategory(quizOne);
   imageEl.height = 250;
   imageEl.width = 350;
 });
@@ -210,7 +213,7 @@ quiz2EL.addEventListener("click", () => {
   answerContainerEl.style.display = "";
   h1ContentEl.textContent = "";
   returnButtonEl.style.display = "block";
-  handleSelectCategoryTwo();
+  handleSelectCategory(quizTwo);
   imageEl.height = 250;
   imageEl.width = 350;
 });
