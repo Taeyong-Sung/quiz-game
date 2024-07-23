@@ -19,6 +19,8 @@ const quizOne = [
   },
 ];
 
+
+
 /*-------------------------------- Constants --------------------------------*/
 // const mainText = "Quiz QUIZ";
 /*---------------------------- Variables (state) ----------------------------*/
@@ -40,8 +42,10 @@ let h1ContentEl = document.querySelector(".h1Content");
 let catergoryContainerEl = document.querySelector("#category-container");
 let answerContainerEl = document.querySelector("#answer-container");
 /*----------------------------- Event Listeners -----------------------------*/
-// quiz1El.addEventListener('click', )
-
+option1El.addEventListener("click", () => handleCheckGuess(0));
+option2El.addEventListener("click", () => handleCheckGuess(1));
+option3El.addEventListener("click", () => handleCheckGuess(2));
+option4El.addEventListener("click", () => handleCheckGuess(3));
 /*-------------------------------- Functions --------------------------------*/
 init();
 
@@ -51,7 +55,7 @@ function init() {
   score = 0;
 }
 
-function handleSelectCategory() {
+function handleSelectCategory(evt) {
   // this is where you'll set your questions
   currentQuestions = quizOne;
   renderQuestion();
@@ -69,20 +73,26 @@ function renderQuestion() {
 
 function handleCheckGuess(evt) {
   // if answer is true, give a point
-  const selectedAnswer = 0
-  if (selectedAnswer === quizOne.answers[correct]) {
+  if (currentQuestions[currentQuestionIdx].correct) {
     score += 1;
+  } else {
+    score == 0;
   }
   // if there are still questions left, advance questionIdx
   if (currentQuestionIdx < currentQuestions.length) {
     currentQuestionIdx++;
+    console.log('You scored one!');
     renderQuestion();
+  } else {
+    console.log(`"Your score is "${score}`);
   }
 }
 
+// this is where if the user clicks on the buttons to see if it is correct or not
 
 catergoryContainerEl.addEventListener("click", () => {
   answerContainerEl.style.display = "";
   catergoryContainerEl.style.display = "none";
+  h1ContentEl.textContent = "Name";
   handleSelectCategory();
 });
