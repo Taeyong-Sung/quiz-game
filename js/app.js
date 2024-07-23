@@ -1,20 +1,47 @@
 const quizOne = [
   {
-    question: "Who am I?",
+    question: "What is the capital of Germany?",
     answers: [
-      { text: "Tae", correct: true },
-      { text: "John", correct: false },
-      { text: "Tommy", correct: false },
-      { text: "Jason", correct: false },
+      { text: "Berlin", correct: true },
+      { text: "Munich", correct: false },
+      { text: "Frankfurt", correct: false },
+      { text: "London", correct: false },
     ],
   },
   {
-    question: "Who are you?",
+    question: "What is the capital of Italy?",
     answers: [
-      { text: "Tae", correct: false },
-      { text: "John", correct: true },
-      { text: "Tommy", correct: false },
-      { text: "Jason", correct: false },
+      { text: "Venice", correct: false },
+      { text: "Rome", correct: true },
+      { text: "Paris", correct: false },
+      { text: "New York", correct: false },
+    ],
+  },
+  {
+    question: "What is the capital of Canada?",
+    answers: [
+      { text: "Vancouver", correct: false },
+      { text: "Toronto", correct: false },
+      { text: "Ottawa", correct: true },
+      { text: "Washington", correct: false },
+    ],
+  },
+  {
+    question: "What is the capital of America?",
+    answers: [
+      { text: "Florida", correct: false },
+      { text: "California", correct: false },
+      { text: "New york", correct: false },
+      { text: "Washington, D.C", correct: true },
+    ],
+  },
+  {
+    question: "What is the capital of Japan?",
+    answers: [
+      { text: "Kyoto", correct: false },
+      { text: "Tokyo", correct: true },
+      { text: "Osaka", correct: false },
+      { text: "Hokkaido", correct: false },
     ],
   },
 ];
@@ -88,6 +115,6 @@ function handleCheckGuess(selectedAnswerIdx) {
 catergoryContainerEl.addEventListener("click", () => {
   answerContainerEl.style.display = "";
   catergoryContainerEl.style.display = "none";
-  h1ContentEl.textContent = "Name";
+  h1ContentEl.textContent = "";
   handleSelectCategory();
 });
