@@ -1,5 +1,7 @@
+// const image = new Image()
 const quizOne = [
   {
+    image: image.src = '../assets/pickachu.png',
     question: "What is the capital of Germany?",
     answers: [
       { text: "Berlin", correct: true },
@@ -46,8 +48,56 @@ const quizOne = [
   },
 ];
 
+const quizTwo = [
+  {
+    question: "What is the name of this Pokemon?",
+    answers: [
+      { text: "Berlin", correct: true },
+      { text: "Munich", correct: false },
+      { text: "Frankfurt", correct: false },
+      { text: "London", correct: false },
+    ],
+  },
+  {
+    question: "What is the name of this Pokemon?",
+    answers: [
+      { text: "Venice", correct: false },
+      { text: "Rome", correct: true },
+      { text: "Paris", correct: false },
+      { text: "New York", correct: false },
+    ],
+  },
+  {
+    question: "What is the name of this Pokemon?",
+    answers: [
+      { text: "Vancouver", correct: false },
+      { text: "Toronto", correct: false },
+      { text: "Ottawa", correct: true },
+      { text: "Washington", correct: false },
+    ],
+  },
+  {
+    question: "What is the name of this Pokemon?",
+    answers: [
+      { text: "Florida", correct: false },
+      { text: "California", correct: false },
+      { text: "New york", correct: false },
+      { text: "Washington, D.C", correct: true },
+    ],
+  },
+  {
+    question: "What is the name of this Pokemon?",
+    answers: [
+      { text: "Kyoto", correct: false },
+      { text: "Tokyo", correct: true },
+      { text: "Osaka", correct: false },
+      { text: "Hokkaido", correct: false },
+    ],
+  },
+];
+
 /*-------------------------------- Constants --------------------------------*/
-// const mainText = "Quiz QUIZ";
+
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
 let result = 0;
@@ -60,12 +110,13 @@ let option2El = document.querySelector("#answer2");
 let option3El = document.querySelector("#answer3");
 let option4El = document.querySelector("#answer4");
 let titleEl = document.querySelector("#title");
-let nextEl = document.querySelector(".nextButton");
+let returnButtonEl = document.querySelector(".returnButton");
 let mainTextEl = document.querySelector(".main");
 let questionEl = document.querySelector("#question");
 let h1ContentEl = document.querySelector(".h1Content");
 let catergoryContainerEl = document.querySelector("#category-container");
 let answerContainerEl = document.querySelector("#answer-container");
+let imageEl = document.querySelector('.image')
 /*----------------------------- Event Listeners -----------------------------*/
 option1El.addEventListener("click", () => handleCheckGuess(0));
 option2El.addEventListener("click", () => handleCheckGuess(1));
@@ -77,7 +128,11 @@ init();
 function init() {
   answerContainerEl.style.display = "none";
   currentQuestionIdx = 0;
+  returnButtonEl.style.display = "none";
   score = 0;
+  catergoryContainerEl.style.display = "";
+  questionEl.textContent = "";
+  h1ContentEl.textContent = "Quiz game";
 }
 
 function handleSelectCategory() {
@@ -87,6 +142,7 @@ function handleSelectCategory() {
 }
 
 function renderQuestion() {
+  imageEl.textContent = currentQuestions[currentQuestionIdx].image;
   questionEl.textContent = currentQuestions[currentQuestionIdx].question;
   // console.log(currentQuestions[currentQuestionIdx].answers);
   option1El.textContent = currentQuestions[currentQuestionIdx].answers[0].text;
@@ -110,11 +166,14 @@ function handleCheckGuess(selectedAnswerIdx) {
   }
 }
 
-// this is where if the user clicks on the buttons to see if it is correct or not
-
 catergoryContainerEl.addEventListener("click", () => {
-  answerContainerEl.style.display = "";
   catergoryContainerEl.style.display = "none";
+  answerContainerEl.style.display = "";
   h1ContentEl.textContent = "";
+  returnButtonEl.style.display = "block";
   handleSelectCategory();
 });
+
+returnButtonEl.addEventListener("click", init);
+
+// how to add pictures and toggle through, make new handlecheckguess function?
