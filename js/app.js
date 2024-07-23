@@ -1,6 +1,7 @@
 const image = new Image();
 const quizOne = [
   {
+    image: (image.src = "../assets/germany.png"),
     question: "What is the capital of Germany?",
     answers: [
       { text: "Berlin", correct: true },
@@ -10,6 +11,7 @@ const quizOne = [
     ],
   },
   {
+    image: (image.src = "../assets/italy.png"),
     question: "What is the capital of Italy?",
     answers: [
       { text: "Venice", correct: false },
@@ -19,6 +21,7 @@ const quizOne = [
     ],
   },
   {
+    image: (image.src = "../assets/canada.png"),
     question: "What is the capital of Canada?",
     answers: [
       { text: "Vancouver", correct: false },
@@ -28,6 +31,7 @@ const quizOne = [
     ],
   },
   {
+    image: (image.src = "../assets/america.webp"),
     question: "What is the capital of America?",
     answers: [
       { text: "Florida", correct: false },
@@ -37,6 +41,7 @@ const quizOne = [
     ],
   },
   {
+    image: (image.src = "../assets/japan.jpg"),
     question: "What is the capital of Japan?",
     answers: [
       { text: "Kyoto", correct: false },
@@ -121,8 +126,8 @@ let h1ContentEl = document.querySelector(".h1Content");
 let catergoryContainerEl = document.querySelector("#category-container");
 let answerContainerEl = document.querySelector("#answer-container");
 let imageEl = document.querySelector(".image");
-let quiz1EL = document.querySelector("#quiz1")
-let quiz2EL = document.querySelector("#quiz2")
+let quiz1EL = document.querySelector("#quiz1");
+let quiz2EL = document.querySelector("#quiz2");
 /*----------------------------- Event Listeners -----------------------------*/
 option1El.addEventListener("click", () => handleCheckGuess(0));
 option2El.addEventListener("click", () => handleCheckGuess(1));
@@ -138,7 +143,7 @@ function init() {
   catergoryContainerEl.style.display = "";
   questionEl.textContent = "";
   h1ContentEl.textContent = "Quiz game";
-  imageEl.src = (image.src = "../assets/quizquiz.jpg")
+  imageEl.src = image.src = "../assets/quizquiz.jpg";
 }
 
 function handleSelectCategory() {
@@ -185,7 +190,7 @@ quiz1EL.addEventListener("click", () => {
   returnButtonEl.style.display = "block";
   handleSelectCategory();
   imageEl.height = 250;
-  imageEl.width = 250;
+  imageEl.width = 350;
 });
 
 quiz2EL.addEventListener("click", () => {
@@ -195,7 +200,7 @@ quiz2EL.addEventListener("click", () => {
   returnButtonEl.style.display = "block";
   handleSelectCategoryTwo();
   imageEl.height = 250;
-  imageEl.width = 250;
+  imageEl.width = 350;
 });
 
 returnButtonEl.addEventListener("click", init);
