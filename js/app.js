@@ -106,7 +106,7 @@ const quizTwo = [
 ];
 
 /*-------------------------------- Constants --------------------------------*/
-const correctAnswerSound = new Audio('../assets/clapping.wav')
+const correctAnswerSound = new Audio("../assets/clapping.wav");
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
 let result = 0;
@@ -143,7 +143,12 @@ function init() {
   catergoryContainerEl.style.display = "";
   questionEl.textContent = "";
   h1ContentEl.textContent = "Quiz game";
+  imageEl.style.display = "block";
   imageEl.src = image.src = "../assets/quizquiz.jpg";
+  option1El.style.display = "block";
+  option2El.style.display = "block";
+  option3El.style.display = "block";
+  option4El.style.display = "block";
 }
 
 function handleSelectCategory() {
@@ -173,7 +178,7 @@ function handleCheckGuess(selectedAnswerIdx) {
   // if answer is true, give a point
   if (currentQuestions[currentQuestionIdx].answers[selectedAnswerIdx].correct) {
     score += 1;
-    correctAnswerSound.play()
+    correctAnswerSound.play();
   }
   // if there are still questions left, advance questionIdx
   if (currentQuestionIdx < currentQuestions.length - 1) {
@@ -181,6 +186,12 @@ function handleCheckGuess(selectedAnswerIdx) {
     renderQuestion();
   } else {
     console.log(`"Your score is "${score}`);
+    questionEl.textContent = `"Your score is "${score}`;
+    option1El.style.display = "none";
+    option2El.style.display = "none";
+    option3El.style.display = "none";
+    option4El.style.display = "none";
+    imageEl.style.display = "none";
   }
 }
 
