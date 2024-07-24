@@ -187,7 +187,7 @@ function handleCheckGuess(selectedAnswerIdx) {
     renderQuestion();
   } else {
     console.log(`"Your score is "${score}`);
-    confetti.start(1000)
+    confetti.start(1000);
     questionEl.textContent = `"Your score is "${score}`;
     option1El.style.display = "none";
     option2El.style.display = "none";
