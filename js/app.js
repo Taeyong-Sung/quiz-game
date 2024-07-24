@@ -5,20 +5,16 @@ const correctAnswerSound = new Audio("../assets/clapping.wav");
 const wrongAnswerSound = new Audio("../assets/wonrgAnswer.wav");
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
-let result = 0;
 let currentQuestions, currentQuestionIdx;
 
 /*------------------------ Cached Element References ------------------------*/
-let selectionEl = document.querySelector(".selection");
 let option1El = document.querySelector("#answer1");
 let option2El = document.querySelector("#answer2");
 let option3El = document.querySelector("#answer3");
 let option4El = document.querySelector("#answer4");
-let titleEl = document.querySelector("#title");
-let returnButtonEl = document.querySelector(".returnButton");
-let mainTextEl = document.querySelector(".main");
+let returnButtonEl = document.querySelector(".return-button");
 let questionEl = document.querySelector("#question");
-let h1ContentEl = document.querySelector(".h1Content");
+let h1ContentEl = document.querySelector(".h1-content");
 let catergoryContainerEl = document.querySelector("#category-container");
 let answerContainerEl = document.querySelector("#answer-container");
 let imageEl = document.querySelector(".image");

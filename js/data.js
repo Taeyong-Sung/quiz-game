@@ -2,6 +2,7 @@ const image = new Image();
 const quizOne = [
   {
     image: (image.src = "../assets/germany.png"),
+    alt: (image.alt = "German flag"),
     question: "What is the capital of Germany?",
     answers: [
       { text: "Berlin", correct: true },
@@ -12,6 +13,7 @@ const quizOne = [
   },
   {
     image: (image.src = "../assets/italy.png"),
+    alt: (image.alt = "Italy flag"),
     question: "What is the capital of Italy?",
     answers: [
       { text: "Venice", correct: false },
@@ -22,6 +24,7 @@ const quizOne = [
   },
   {
     image: (image.src = "../assets/canada.png"),
+    alt: (image.alt = "Canada flag"),
     question: "What is the capital of Canada?",
     answers: [
       { text: "Vancouver", correct: false },
@@ -32,6 +35,7 @@ const quizOne = [
   },
   {
     image: (image.src = "../assets/america.webp"),
+    alt: (image.alt = "= America flag"),
     question: "What is the capital of America?",
     answers: [
       { text: "Florida", correct: false },
@@ -42,6 +46,7 @@ const quizOne = [
   },
   {
     image: (image.src = "../assets/japan.jpg"),
+    alt: (image.alt = "japan flag"),
     question: "What is the capital of Japan?",
     answers: [
       { text: "Kyoto", correct: false },
@@ -54,7 +59,8 @@ const quizOne = [
 
 const quizTwo = [
   {
-    image: (image.src = "../assets/pickachu.png"),
+    image: (image.src = "../assets/1.png"),
+    alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Pikachu", correct: true },
@@ -64,7 +70,8 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/eevee.png"),
+    image: (image.src = "../assets/2.png"),
+    alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Abra", correct: false },
@@ -74,7 +81,8 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/meowth.jpg"),
+    image: (image.src = "../assets/3.jpg"),
+    alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Muk", correct: false },
@@ -84,7 +92,8 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/charizard.png"),
+    image: (image.src = "../assets/4.png"),
+    alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Ponyta", correct: false },
@@ -94,7 +103,8 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/snorlex.jpg"),
+    image: (image.src = "../assets/5.jpg"),
+    alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Slowbro", correct: false },
