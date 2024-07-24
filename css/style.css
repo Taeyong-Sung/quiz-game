@@ -46,3 +46,7 @@ body {
 #return {
   margin-top: 10px;
 }
+
+.answerButton {
+  display: none;
+}
