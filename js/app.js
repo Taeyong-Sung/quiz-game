@@ -1,7 +1,12 @@
+// /*-------------------------------- Import -----------------------------------*/
+// import { quizOne,quizTwo } from "./data.js"
+
 const image = new Image();
+// alt = image.setAttribute("alt", question.alt)
 const quizOne = [
   {
-    image: (image.src = "../assets/germany.png"),
+    image: (image.src = "../assets/5ermany.png"),
+    // alt: (image.alt = "German Flag"),
     question: "What is the capital of Germany?",
     answers: [
       { text: "Berlin", correct: true },
@@ -104,7 +109,6 @@ const quizTwo = [
     ],
   },
 ];
-
 /*-------------------------------- Constants --------------------------------*/
 const correctAnswerSound = new Audio("../assets/clapping.wav");
 const wrongAnswerSound = new Audio("../assets/wonrgAnswer.wav");
@@ -135,6 +139,30 @@ option1El.addEventListener("click", () => handleCheckGuess(0));
 option2El.addEventListener("click", () => handleCheckGuess(1));
 option3El.addEventListener("click", () => handleCheckGuess(2));
 option4El.addEventListener("click", () => handleCheckGuess(3));
+
+quiz1EL.addEventListener("click", () => {
+  catergoryContainerEl.style.display = "none";
+  answerContainerEl.style.display = "";
+  h1ContentEl.textContent = "";
+  returnButtonEl.style.display = "block";
+  handleSelectCategory(quizOne);
+  imageEl.height = 250;
+  imageEl.width = 350;
+  descriptionEl.style.display = "none";
+});
+
+quiz2EL.addEventListener("click", () => {
+  catergoryContainerEl.style.display = "none";
+  answerContainerEl.style.display = "";
+  h1ContentEl.textContent = "";
+  returnButtonEl.style.display = "block";
+  handleSelectCategory(quizTwo);
+  imageEl.height = 250;
+  imageEl.width = 350;
+  descriptionEl.style.display = "none";
+});
+
+returnButtonEl.addEventListener("click", init);
 /*-------------------------------- Functions --------------------------------*/
 
 function init() {
@@ -168,6 +196,7 @@ function renderQuestion() {
   option4El.textContent = currentQuestions[currentQuestionIdx].answers[3].text;
 }
 
+
 function handleCheckGuess(selectedAnswerIdx) {
   // if answer is true, give a point
   if (currentQuestions[currentQuestionIdx].answers[selectedAnswerIdx].correct) {
@@ -179,11 +208,10 @@ function handleCheckGuess(selectedAnswerIdx) {
   // if there are still questions left, advance questionIdx
   if (currentQuestionIdx +1 < currentQuestions.length) {
     currentQuestionIdx++;
-    renderQuestion();
-
+    setTimeout(renderQuestion, 1000)
     // this is where if there are no more questions, the game decides if the user won or not
   } else {
-    questionEl.textContent = `Your score is "${score}, try again!`;
+    questionEl.textContent = `Your score is ${score}, try again!`;
     option1El.style.display = "none";
     option2El.style.display = "none";
     option3El.style.display = "none";
@@ -195,28 +223,5 @@ function handleCheckGuess(selectedAnswerIdx) {
     }
   }
 }
-quiz1EL.addEventListener("click", () => {
-  catergoryContainerEl.style.display = "none";
-  answerContainerEl.style.display = "";
-  h1ContentEl.textContent = "";
-  returnButtonEl.style.display = "block";
-  handleSelectCategory(quizOne);
-  imageEl.height = 250;
-  imageEl.width = 350;
-  descriptionEl.style.display = "none";
-});
-
-quiz2EL.addEventListener("click", () => {
-  catergoryContainerEl.style.display = "none";
-  answerContainerEl.style.display = "";
-  h1ContentEl.textContent = "";
-  returnButtonEl.style.display = "block";
-  handleSelectCategory(quizTwo);
-  imageEl.height = 250;
-  imageEl.width = 350;
-  descriptionEl.style.display = "none";
-});
-
-returnButtonEl.addEventListener("click", init);
 
 init();
