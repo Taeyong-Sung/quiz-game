@@ -167,9 +167,7 @@ function handleSelectCategory(quizSelect) {
 function renderQuestion() {
   imageEl.src = currentQuestions[currentQuestionIdx].image;
   questionEl.textContent = currentQuestions[currentQuestionIdx].question;
-  // console.log(currentQuestions[currentQuestionIdx].answers);
   option1El.textContent = currentQuestions[currentQuestionIdx].answers[0].text;
-  // console.log(option1El);
   option2El.textContent = currentQuestions[currentQuestionIdx].answers[1].text;
   option3El.textContent = currentQuestions[currentQuestionIdx].answers[2].text;
   option4El.textContent = currentQuestions[currentQuestionIdx].answers[3].text;
@@ -189,6 +187,7 @@ function handleCheckGuess(selectedAnswerIdx) {
     renderQuestion();
   } else {
     console.log(`"Your score is "${score}`);
+    confetti.start(1000)
     questionEl.textContent = `"Your score is "${score}`;
     option1El.style.display = "none";
     option2El.style.display = "none";
