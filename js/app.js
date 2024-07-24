@@ -57,7 +57,7 @@ const quizTwo = [
     image: (image.src = "../assets/pickachu.png"),
     question: "What is the name of this Pokemon?",
     answers: [
-      { text: "Pickachu", correct: true },
+      { text: "Pikachu", correct: true },
       { text: "Bulbasaur", correct: false },
       { text: "Jigglypuff", correct: false },
       { text: "Machop", correct: false },
@@ -90,7 +90,7 @@ const quizTwo = [
       { text: "Ponyta", correct: false },
       { text: "Charmander", correct: false },
       { text: "Caterpie", correct: false },
-      { text: "Charlizard", correct: true },
+      { text: "Charizard", correct: true },
     ],
   },
   {
@@ -98,7 +98,7 @@ const quizTwo = [
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Slowbro", correct: false },
-      { text: "Snorlex", correct: true },
+      { text: "snorlax", correct: true },
       { text: "Seel", correct: false },
       { text: "Dragonite", correct: false },
     ],
