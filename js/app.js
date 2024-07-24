@@ -194,6 +194,9 @@ function handleCheckGuess(selectedAnswerIdx) {
     option3El.style.display = "none";
     option4El.style.display = "none";
     imageEl.style.display = "none";
+    if (score > 3) {
+      questionEl.textContent = `"Your score is "${score}, "you Win`;
+    }
   }
 }
 
