@@ -98,7 +98,7 @@ const quizTwo = [
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Slowbro", correct: false },
-      { text: "snorlax", correct: true },
+      { text: "Snorlax", correct: true },
       { text: "Seel", correct: false },
       { text: "Dragonite", correct: false },
     ],
@@ -129,6 +129,7 @@ let answerContainerEl = document.querySelector("#answer-container");
 let imageEl = document.querySelector(".image");
 let quiz1EL = document.querySelector("#quiz1");
 let quiz2EL = document.querySelector("#quiz2");
+let descriptionEl = document.querySelector("#description");
 /*----------------------------- Event Listeners -----------------------------*/
 option1El.addEventListener("click", () => handleCheckGuess(0));
 option2El.addEventListener("click", () => handleCheckGuess(1));
@@ -150,14 +151,13 @@ function init() {
   option2El.style.display = "block";
   option3El.style.display = "block";
   option4El.style.display = "block";
+  descriptionEl.style.display = "block";
 }
 
 function handleSelectCategory(quizSelect) {
   currentQuestions = quizSelect;
   renderQuestion();
 }
-
-
 
 function renderQuestion() {
   imageEl.src = currentQuestions[currentQuestionIdx].image;
@@ -177,11 +177,11 @@ function handleCheckGuess(selectedAnswerIdx) {
     wrongAnswerSound.play();
   }
   // if there are still questions left, advance questionIdx
-  if (currentQuestionIdx < currentQuestions.length - 1) {
+  if (currentQuestionIdx +1 < currentQuestions.length) {
     currentQuestionIdx++;
     renderQuestion();
 
-  // this is where if there are no more questions, the game decides if the user won or not
+    // this is where if there are no more questions, the game decides if the user won or not
   } else {
     questionEl.textContent = `Your score is "${score}, try again!`;
     option1El.style.display = "none";
@@ -203,6 +203,7 @@ quiz1EL.addEventListener("click", () => {
   handleSelectCategory(quizOne);
   imageEl.height = 250;
   imageEl.width = 350;
+  descriptionEl.style.display = "none";
 });
 
 quiz2EL.addEventListener("click", () => {
@@ -213,6 +214,7 @@ quiz2EL.addEventListener("click", () => {
   handleSelectCategory(quizTwo);
   imageEl.height = 250;
   imageEl.width = 350;
+  descriptionEl.style.display = "none";
 });
 
 returnButtonEl.addEventListener("click", init);
