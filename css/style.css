@@ -36,3 +36,8 @@ body {
 .image {
   display: flex;
 }
+
+
+#description{
+  font-size: 12px;
+}

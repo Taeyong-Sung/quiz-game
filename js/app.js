@@ -153,16 +153,11 @@ function init() {
 }
 
 function handleSelectCategory(quizSelect) {
-  // this is where you'll set your questions
   currentQuestions = quizSelect;
   renderQuestion();
 }
 
-// function handleSelectCategoryTwo() {
-//   // this is where you'll set your questions
-//   currentQuestions = quizTwo;
-//   renderQuestion();
-// }
+
 
 function renderQuestion() {
   imageEl.src = currentQuestions[currentQuestionIdx].image;
@@ -185,21 +180,21 @@ function handleCheckGuess(selectedAnswerIdx) {
   if (currentQuestionIdx < currentQuestions.length - 1) {
     currentQuestionIdx++;
     renderQuestion();
+
+  // this is where if there are no more questions, the game decides if the user won or not
   } else {
-    console.log(`"Your score is "${score}`);
-    confetti.start(1000);
-    questionEl.textContent = `"Your score is "${score}`;
+    questionEl.textContent = `Your score is "${score}, try again!`;
     option1El.style.display = "none";
     option2El.style.display = "none";
     option3El.style.display = "none";
     option4El.style.display = "none";
     imageEl.style.display = "none";
     if (score > 3) {
-      questionEl.textContent = `"Your score is "${score}, "you Win`;
+      questionEl.textContent = `Your score is ${score}, you Win`;
+      confetti.start(1000);
     }
   }
 }
-
 quiz1EL.addEventListener("click", () => {
   catergoryContainerEl.style.display = "none";
   answerContainerEl.style.display = "";
