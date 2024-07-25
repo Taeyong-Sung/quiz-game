@@ -3,6 +3,7 @@ import { image, quizOne, quizTwo } from "./data.js";
 /*-------------------------------- Constants --------------------------------*/
 const correctAnswerSound = new Audio("./assets/clapping.wav");
 const wrongAnswerSound = new Audio("./assets/wonrgAnswer.wav");
+const cheerSound = new Audio("./assets/cheer.wav");
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
 let currentQuestions, currentQuestionIdx;
@@ -109,6 +110,7 @@ function handleCheckGuess(selectedAnswerIdx) {
     if (score > 3) {
       questionEl.textContent = `Your score is ${score} /5, you Win!`;
       confetti.start(1000);
+      cheerSound.play();
     }
   }
 }
