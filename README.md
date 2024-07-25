@@ -3,14 +3,18 @@
 ## By: Taeyong Sung
 
 ## Description
-![screenshot](https://github.com/user-attachments/assets/39dc0b99-7688-47e7-9ba0-9699a75ea6b4)
-Lets play a simple quiz game! The goal for this simple quiz is to score above 3!
+![screenshot](https://github.com/user-attachments/assets/d9261720-e670-4111-a9f3-433933ffce85)
+Lets play a fun quiz game! The goal for this simple quiz is to score above 3!
+
+> ## Motivation/Inspiration:
+Since I was a child, playing quizzes online has been one of my favorite pastimes. My friends and I used to enjoy exchanging questions and answers. Seeing what other people knew about anything in the world compared to what I knew about anything was really exciting.
+
 
 > ## Let's get started!
 
 ### Click **[here](https://taeyong-sung.github.io/quiz-game/)** to play!
 
-Select on one of the category to start the game, and pick what you think the answer might be! At the end of the quiz, it will show total of your correct answers! 
+To begin the game, click on any category, then select what you believe to be the solution! The quiz's last screen will display the result of your right responses!
 
 
 > ## Attributions:
@@ -18,7 +22,7 @@ Select on one of the category to start the game, and pick what you think the ans
 * [Freepik](https://www.freepik.com/)
 * [Freesound](https://freesound.org/)
 
-> ## Technologies Used: 
+> ## Technologies used: 
 
 ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
