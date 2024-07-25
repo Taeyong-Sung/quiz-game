@@ -1,5 +1,5 @@
 // /*-------------------------------- Import -----------------------------------*/
-import { image, quizOne, quizTwo } from "./data.js"
+import { image, quizOne, quizTwo } from "./data.js";
 /*-------------------------------- Constants --------------------------------*/
 const correctAnswerSound = new Audio("../assets/clapping.wav");
 const wrongAnswerSound = new Audio("../assets/wonrgAnswer.wav");
@@ -84,7 +84,6 @@ function renderQuestion() {
   option4El.textContent = currentQuestions[currentQuestionIdx].answers[3].text;
 }
 
-
 function handleCheckGuess(selectedAnswerIdx) {
   // if answer is true, give a point
   if (currentQuestions[currentQuestionIdx].answers[selectedAnswerIdx].correct) {
@@ -94,9 +93,9 @@ function handleCheckGuess(selectedAnswerIdx) {
     wrongAnswerSound.play();
   }
   // if there are still questions left, advance questionIdx
-  if (currentQuestionIdx +1 < currentQuestions.length) {
+  if (currentQuestionIdx + 1 < currentQuestions.length) {
     currentQuestionIdx++;
-    setTimeout(renderQuestion, 1000)
+    setTimeout(renderQuestion, 1000);
     // this is where if there are no more questions, the game decides if the user won or not
   } else {
     questionEl.textContent = `Your score is ${score}, try again!`;
