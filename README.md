@@ -3,7 +3,7 @@
 ## By: Taeyong Sung
 
 ## Description
-![screenshot](https://github.com/user-attachments/assets/d9261720-e670-4111-a9f3-433933ffce85)
+![screenshot](https://github.com/user-attachments/assets/ed526cc2-338c-4e41-98bf-0bff7d200207)
 Lets play a fun quiz game! The goal for this simple quiz is to score above 3!
 
 > ## Motivation/Inspiration:
