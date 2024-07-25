@@ -8,7 +8,7 @@ Lets play a simple quiz game! The goal for this simple quiz is to score above 3!
 
 > ## Let's get started!
 
-### Click **[here](taeyong-sung.github.io/quiz-game)** to play!
+### Click **[here](https://taeyong-sung.github.io/quiz-game/)** to play!
 
 Select on one of the category to start the game, and pick what you think the answer might be! At the end of the quiz, it will show total of your correct answers! 
 
