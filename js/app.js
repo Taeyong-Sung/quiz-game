@@ -97,17 +97,17 @@ function handleCheckGuess(selectedAnswerIdx) {
   // if there are still questions left, advance questionIdx
   if (currentQuestionIdx + 1 < currentQuestions.length) {
     currentQuestionIdx++;
-    setTimeout(renderQuestion, 1000);
+    setTimeout(renderQuestion, 500);
     // this is where if there are no more questions, the game decides if the user won or not
   } else {
-    questionEl.textContent = `Your score is ${score}, try again!`;
+    questionEl.textContent = `Your score is ${score} /5, try again!`;
     option1El.style.display = "none";
     option2El.style.display = "none";
     option3El.style.display = "none";
     option4El.style.display = "none";
     imageEl.style.display = "none";
     if (score > 3) {
-      questionEl.textContent = `Your score is ${score}, you Win`;
+      questionEl.textContent = `Your score is ${score} /5, you Win!`;
       confetti.start(1000);
     }
   }
