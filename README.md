@@ -8,7 +8,7 @@ Lets play a simple quiz game! The goal for this simple quiz is to score above a 
 
 ## Let's get started!
 
-Click here to play: https://taeyong-sung.github.io/quiz-game/
+### Click here to [Play](https://www.taeyong-sung.github.io/quiz-game)
 
 Click on one of the categories to start the game, and pick what you think the answer might be! There will be a total of questions correct at the end of each quiz!
 
@@ -27,5 +27,5 @@ Click on one of the categories to start the game, and pick what you think the an
 * Timer on each question.
 
 
-Project planning link : [Planning Material](https://docs.google.com/document/d/1ruifHj5xjO8IezIZq7vjtgry1uHaIX9O6zKewnI3ZAo/edit)
+Project planning link : [Planning Material](https://docs.google.com/document/d/1ruifHj5xjO8IezIZq7vjtgry1uHaIX9O6zKewnI3ZAo/edit).
 

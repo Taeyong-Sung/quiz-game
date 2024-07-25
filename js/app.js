@@ -33,8 +33,8 @@ quiz1EL.addEventListener("click", () => {
   h1ContentEl.textContent = "";
   returnButtonEl.style.display = "block";
   handleSelectCategory(quizOne);
-  imageEl.height = 250;
-  imageEl.width = 350;
+  imageEl.height = 400;
+  imageEl.width = 600;
   descriptionEl.style.display = "none";
 });
 
@@ -44,8 +44,8 @@ quiz2EL.addEventListener("click", () => {
   h1ContentEl.textContent = "";
   returnButtonEl.style.display = "block";
   handleSelectCategory(quizTwo);
-  imageEl.height = 250;
-  imageEl.width = 350;
+  imageEl.height = 500;
+  imageEl.width = 600;
   descriptionEl.style.display = "none";
 });
 
@@ -62,6 +62,8 @@ function init() {
   h1ContentEl.textContent = "Quiz game";
   imageEl.style.display = "block";
   imageEl.src = image.src = "./assets/quizquiz.jpg";
+  imageEl.height = 250;
+  imageEl.width= 500;
   option1El.style.display = "block";
   option2El.style.display = "block";
   option3El.style.display = "block";
