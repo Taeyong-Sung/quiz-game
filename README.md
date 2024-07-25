@@ -4,13 +4,13 @@
 
 ## Description
 ![screenshot](https://github.com/user-attachments/assets/6001f7e0-cac7-403f-94a8-61cd1780eb34)
-Lets play a simple quiz game! The goal for this simple quiz is to score above a 3!
+Lets play a simple quiz game! The goal for this simple quiz is to score above 3!
 
 ## Let's get started!
 
 ### Click here to [Play](https://www.taeyong-sung.github.io/quiz-game)
 
-Click on one of the categories to start the game, and pick what you think the answer might be! There will be a total of questions correct at the end of each quiz!
+Select on one of the category to start the game, and pick what you think the answer might be! At the end of the quiz, it will show total of your correct answers! 
 
 ## Attributions:
 * [Google Images](https://www.google.com/imghp)
@@ -24,7 +24,7 @@ Click on one of the categories to start the game, and pick what you think the an
 ## Future goals to add to the game:
 * More quiz questions.
 * Mouse-over Hint on each questions.
-* Timer on each question.
+* Timer on each questions.
 
 
 Project planning link : [Planning Material](https://docs.google.com/document/d/1ruifHj5xjO8IezIZq7vjtgry1uHaIX9O6zKewnI3ZAo/edit).
