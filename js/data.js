@@ -1,7 +1,7 @@
 const image = new Image();
 const quizOne = [
   {
-    image: (image.src = "../assets/germany.png"),
+    image: (image.src = "./assets/germany.png"),
     alt: (image.alt = "German flag"),
     question: "What is the capital of Germany?",
     answers: [
@@ -12,7 +12,7 @@ const quizOne = [
     ],
   },
   {
-    image: (image.src = "../assets/italy.png"),
+    image: (image.src = "./assets/italy.png"),
     alt: (image.alt = "Italy flag"),
     question: "What is the capital of Italy?",
     answers: [
@@ -23,7 +23,7 @@ const quizOne = [
     ],
   },
   {
-    image: (image.src = "../assets/canada.png"),
+    image: (image.src = "./assets/canada.png"),
     alt: (image.alt = "Canada flag"),
     question: "What is the capital of Canada?",
     answers: [
@@ -34,7 +34,7 @@ const quizOne = [
     ],
   },
   {
-    image: (image.src = "../assets/america.webp"),
+    image: (image.src = "./assets/america.webp"),
     alt: (image.alt = "= America flag"),
     question: "What is the capital of America?",
     answers: [
@@ -45,7 +45,7 @@ const quizOne = [
     ],
   },
   {
-    image: (image.src = "../assets/japan.jpg"),
+    image: (image.src = "./assets/japan.jpg"),
     alt: (image.alt = "japan flag"),
     question: "What is the capital of Japan?",
     answers: [
@@ -59,7 +59,7 @@ const quizOne = [
 
 const quizTwo = [
   {
-    image: (image.src = "../assets/1.png"),
+    image: (image.src = "./assets/1.png"),
     alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
@@ -70,7 +70,7 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/2.png"),
+    image: (image.src = "./assets/2.png"),
     alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
@@ -81,7 +81,7 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/3.jpg"),
+    image: (image.src = "./assets/3.jpg"),
     alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
@@ -92,7 +92,7 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/4.png"),
+    image: (image.src = "./assets/4.png"),
     alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
@@ -103,7 +103,7 @@ const quizTwo = [
     ],
   },
   {
-    image: (image.src = "../assets/5.jpg"),
+    image: (image.src = "./assets/5.jpg"),
     alt: (image.alt = "picture of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [

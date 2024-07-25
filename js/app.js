@@ -1,8 +1,8 @@
 // /*-------------------------------- Import -----------------------------------*/
 import { image, quizOne, quizTwo } from "./data.js";
 /*-------------------------------- Constants --------------------------------*/
-const correctAnswerSound = new Audio("../assets/clapping.wav");
-const wrongAnswerSound = new Audio("../assets/wonrgAnswer.wav");
+const correctAnswerSound = new Audio("./assets/clapping.wav");
+const wrongAnswerSound = new Audio("./assets/wonrgAnswer.wav");
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
 let currentQuestions, currentQuestionIdx;
@@ -61,7 +61,7 @@ function init() {
   questionEl.textContent = "";
   h1ContentEl.textContent = "Quiz game";
   imageEl.style.display = "block";
-  imageEl.src = image.src = "../assets/quizquiz.jpg";
+  imageEl.src = image.src = "./assets/quizquiz.jpg";
   option1El.style.display = "block";
   option2El.style.display = "block";
   option3El.style.display = "block";
