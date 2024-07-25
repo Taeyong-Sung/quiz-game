@@ -62,7 +62,7 @@ function init() {
   questionEl.textContent = "";
   h1ContentEl.textContent = "Quiz game";
   imageEl.style.display = "block";
-  imageEl.src = image.src = "./assets/quizquiz.jpg";
+  imageEl.src = image.src = "./assets/quiz-image-2.jpg";
   imageEl.height = 250;
   imageEl.width= 500;
   option1El.style.display = "block";
