@@ -45,7 +45,7 @@ const quizOne = [
     ],
   },
   {
-    image: (image.src = "./assets/japan.jpg"),
+    image: (image.src = "./assets/japan.png"),
     alt: (image.alt = "japan flag"),
     question: "What is the capital of Japan?",
     answers: [
