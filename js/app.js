@@ -52,9 +52,9 @@ quiz2El.addEventListener("click", () => {
 returnButtonEl.addEventListener("click", init);
 /*-------------------------------- Functions --------------------------------*/
 function init() {
-  h1ContentEl.textContent = "Quiz game";
-  imageEl.src = image.src = "./assets/quiz-image-2.jpg";
-  imageEl.height = 250;
+  h1ContentEl.textContent = "Pokemon Quiz Game";
+  imageEl.src = image.src = "./assets/pokemon-logo.png";
+  imageEl.height = 300;
   imageEl.width = 500;
   score = 0;
   currentQuestionIdx = 0;

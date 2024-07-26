@@ -1,14 +1,13 @@
-# <center> **WELCOME TO QUIZ GAME** </center>
+# <center> **WELCOME TO Pokemon Quiz Game** </center>
 
 ## By: Taeyong Sung
 
 ## Description
-![screenshot](https://github.com/user-attachments/assets/ed526cc2-338c-4e41-98bf-0bff7d200207)
+![screenshot](https://github.com/user-attachments/assets/4f7f54a9-ebe4-44bf-9b92-0b9dba17cb74)
 Lets play a fun quiz game! The goal for this quiz is to score above 3!
 
 > ## Motivation/Inspiration:
-Since I was a child, playing quizzes online has been one of my favorite way to pass time. My friends and I used to enjoy exchanging questions and answers. Seeing what other people knew compared to what I knew was very intriguing.
-
+Pokemon has always been a childhood favorite of mine. I vividly recall the times I used my Nintendo DS beneath my covers to play Pokemon with a flashlight. Since I was a kid, I had a lot of enjoyable memories from playing Pokemon.
 
 > ## Let's get started!
 
