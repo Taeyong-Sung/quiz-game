@@ -7,7 +7,7 @@
 Lets play a fun quiz game! The goal for this quiz is to score above 3!
 
 > ## Motivation/Inspiration:
-Pokemon has always been a childhood favorite of mine. I vividly recall the times I used my Nintendo DS beneath my covers to play Pokemon with a flashlight. Since I was a kid, I had a lot of enjoyable memories from playing Pokemon.
+Since I can remember, one of my favorite games has always been quizzes. I have always been curious to learn more about the world. Additionally, I have always loved Pokemon, even as a child. I still remember the days I played Pokemon with a flashlight on my Nintendo DS while hiding under my blankets. Playing Pokemon brought back many happy memories for me as a child.
 
 > ## Let's get started!
 
