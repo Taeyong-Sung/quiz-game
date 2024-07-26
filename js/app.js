@@ -2,7 +2,7 @@
 import { image, quizOne, quizTwo } from "./data.js";
 /*-------------------------------- Constants --------------------------------*/
 const correctAnswerSound = new Audio("./assets/clapping.wav");
-const wrongAnswerSound = new Audio("./assets/wonrgAnswer.wav");
+const wrongAnswerSound = new Audio("./assets/wrongAnswer.wav");
 const cheerSound = new Audio("./assets/cheer.wav");
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
@@ -18,8 +18,8 @@ let h1ContentEl = document.querySelector(".h1-content");
 let catergoryContainerEl = document.querySelector("#category-container");
 let answerContainerEl = document.querySelector("#answer-container");
 let imageEl = document.querySelector(".image");
-let quiz1EL = document.querySelector("#quiz1");
-let quiz2EL = document.querySelector("#quiz2");
+let quiz1El = document.querySelector("#quiz1");
+let quiz2El = document.querySelector("#quiz2");
 let descriptionEl = document.querySelector("#description");
 /*----------------------------- Event Listeners -----------------------------*/
 option1El.addEventListener("click", () => handleCheckGuess(0));
@@ -27,7 +27,7 @@ option2El.addEventListener("click", () => handleCheckGuess(1));
 option3El.addEventListener("click", () => handleCheckGuess(2));
 option4El.addEventListener("click", () => handleCheckGuess(3));
 
-quiz1EL.addEventListener("click", () => {
+quiz1El.addEventListener("click", () => {
   h1ContentEl.textContent = "";
   answerContainerEl.style.display = "";
   catergoryContainerEl.style.display = "none";
@@ -38,7 +38,7 @@ quiz1EL.addEventListener("click", () => {
   handleSelectCategory(quizOne);
 });
 
-quiz2EL.addEventListener("click", () => {
+quiz2El.addEventListener("click", () => {
   h1ContentEl.textContent = "";
   answerContainerEl.style.display = "";
   catergoryContainerEl.style.display = "none";
@@ -55,7 +55,7 @@ function init() {
   h1ContentEl.textContent = "Quiz game";
   imageEl.src = image.src = "./assets/quiz-image-2.jpg";
   imageEl.height = 250;
-  imageEl.width= 500;
+  imageEl.width = 500;
   score = 0;
   currentQuestionIdx = 0;
   catergoryContainerEl.style.display = "";
