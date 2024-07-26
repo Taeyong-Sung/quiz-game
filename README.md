@@ -4,17 +4,17 @@
 
 ## Description
 ![screenshot](https://github.com/user-attachments/assets/ed526cc2-338c-4e41-98bf-0bff7d200207)
-Lets play a fun quiz game! The goal for this simple quiz is to score above 3!
+Lets play a fun quiz game! The goal for this quiz is to score above 3!
 
 > ## Motivation/Inspiration:
-Since I was a child, playing quizzes online has been one of my favorite pastimes. My friends and I used to enjoy exchanging questions and answers. Seeing what other people knew about anything in the world compared to what I knew about anything was really exciting.
+Since I was a child, playing quizzes online has been one of my favorite way to pass time. My friends and I used to enjoy exchanging questions and answers. Seeing what other people knew compared to what I knew was very intriguing.
 
 
 > ## Let's get started!
 
 ### Click **[here](https://taeyong-sung.github.io/quiz-game/)** to play!
 
-To begin the game, click on any category, then select what you believe to be the solution! The quiz's last screen will display the result of your right responses!
+To begin the game, choose a category, then select what you believe to be the solution! The quiz's last screen will display the result of your right responses!
 
 Project planning link : [Planning Material](https://docs.google.com/document/d/1ruifHj5xjO8IezIZq7vjtgry1uHaIX9O6zKewnI3ZAo/edit).
 
@@ -31,6 +31,7 @@ Project planning link : [Planning Material](https://docs.google.com/document/d/1
 * More quiz questions.
 * Mouse-over Hint on each questions.
 * Timer on each questions.
+* Color red/green to indicate what the wrong answer is and the wrong answer is after each answer.
 
 
 
