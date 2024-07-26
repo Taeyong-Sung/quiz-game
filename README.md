@@ -1,4 +1,4 @@
-# <center> **WELCOME TO Pokemon Quiz Game** </center>
+# <center> **WELCOME TO POKEMON QUIZ GAME** </center>
 
 ## By: Taeyong Sung
 
