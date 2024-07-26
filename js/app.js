@@ -28,41 +28,41 @@ option3El.addEventListener("click", () => handleCheckGuess(2));
 option4El.addEventListener("click", () => handleCheckGuess(3));
 
 quiz1EL.addEventListener("click", () => {
-  catergoryContainerEl.style.display = "none";
-  answerContainerEl.style.display = "";
   h1ContentEl.textContent = "";
+  answerContainerEl.style.display = "";
+  catergoryContainerEl.style.display = "none";
+  descriptionEl.style.display = "none";
   returnButtonEl.style.display = "block";
-  handleSelectCategory(quizOne);
   imageEl.height = 400;
   imageEl.width = 600;
-  descriptionEl.style.display = "none";
+  handleSelectCategory(quizOne);
 });
 
 quiz2EL.addEventListener("click", () => {
-  catergoryContainerEl.style.display = "none";
-  answerContainerEl.style.display = "";
   h1ContentEl.textContent = "";
+  answerContainerEl.style.display = "";
+  catergoryContainerEl.style.display = "none";
+  descriptionEl.style.display = "none";
   returnButtonEl.style.display = "block";
-  handleSelectCategory(quizTwo);
   imageEl.height = 500;
   imageEl.width = 600;
-  descriptionEl.style.display = "none";
+  handleSelectCategory(quizTwo);
 });
 
 returnButtonEl.addEventListener("click", init);
 /*-------------------------------- Functions --------------------------------*/
 function init() {
-  answerContainerEl.style.display = "none";
-  currentQuestionIdx = 0;
-  returnButtonEl.style.display = "none";
-  score = 0;
-  catergoryContainerEl.style.display = "";
-  questionEl.textContent = "";
   h1ContentEl.textContent = "Quiz game";
-  imageEl.style.display = "block";
   imageEl.src = image.src = "./assets/quiz-image-2.jpg";
   imageEl.height = 250;
   imageEl.width= 500;
+  score = 0;
+  currentQuestionIdx = 0;
+  catergoryContainerEl.style.display = "";
+  questionEl.textContent = "";
+  answerContainerEl.style.display = "none";
+  returnButtonEl.style.display = "none";
+  imageEl.style.display = "block";
   option1El.style.display = "block";
   option2El.style.display = "block";
   option3El.style.display = "block";
