@@ -16,6 +16,7 @@ Since I was a child, playing quizzes online has been one of my favorite pastimes
 
 To begin the game, click on any category, then select what you believe to be the solution! The quiz's last screen will display the result of your right responses!
 
+Project planning link : [Planning Material](https://docs.google.com/document/d/1ruifHj5xjO8IezIZq7vjtgry1uHaIX9O6zKewnI3ZAo/edit).
 
 > ## Attributions:
 * [Google Images](https://www.google.com/imghp)
@@ -32,5 +33,5 @@ To begin the game, click on any category, then select what you believe to be the
 * Timer on each questions.
 
 
-Project planning link : [Planning Material](https://docs.google.com/document/d/1ruifHj5xjO8IezIZq7vjtgry1uHaIX9O6zKewnI3ZAo/edit).
+
 

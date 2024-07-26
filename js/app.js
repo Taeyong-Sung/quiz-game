@@ -7,7 +7,6 @@ const cheerSound = new Audio("./assets/cheer.wav");
 /*---------------------------- Variables (state) ----------------------------*/
 let score = 0;
 let currentQuestions, currentQuestionIdx;
-
 /*------------------------ Cached Element References ------------------------*/
 let option1El = document.querySelector("#answer1");
 let option2El = document.querySelector("#answer2");
@@ -52,7 +51,6 @@ quiz2EL.addEventListener("click", () => {
 
 returnButtonEl.addEventListener("click", init);
 /*-------------------------------- Functions --------------------------------*/
-
 function init() {
   answerContainerEl.style.display = "none";
   currentQuestionIdx = 0;
@@ -114,5 +112,5 @@ function handleCheckGuess(selectedAnswerIdx) {
     }
   }
 }
-
+/*-------------------------------- Init -------------------------------------*/
 init();
