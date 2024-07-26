@@ -1,58 +1,58 @@
 const image = new Image();
 const quizOne = [
   {
-    image: (image.src = "./assets/germany.png"),
-    alt: (image.alt = "German flag"),
-    question: "What is the capital of Germany?",
+    image: (image.src = "./assets/dragonite.png"),
+    alt: (image.alt = "image of dragonite"),
+    question: "Dragonite is what type of Pokemon?",
     answers: [
-      { text: "Berlin", correct: true },
-      { text: "Munich", correct: false },
-      { text: "Frankfurt", correct: false },
-      { text: "London", correct: false },
+      { text: "Dragon", correct: true },
+      { text: "Flying", correct: false },
+      { text: "Fire", correct: false },
+      { text: "Ground", correct: false },
     ],
   },
   {
-    image: (image.src = "./assets/italy.png"),
-    alt: (image.alt = "Italy flag"),
-    question: "What is the capital of Italy?",
+    image: (image.src = "./assets/ditto.png"),
+    alt: (image.alt = "image of ditto"),
+    question: "Ditto is what type of Pokemon?",
     answers: [
-      { text: "Venice", correct: false },
-      { text: "Rome", correct: true },
-      { text: "Paris", correct: false },
-      { text: "New York", correct: false },
+      { text: "Fire", correct: false },
+      { text: "Normal", correct: true },
+      { text: "Flying", correct: false },
+      { text: "Psychic", correct: false },
     ],
   },
   {
-    image: (image.src = "./assets/canada.png"),
-    alt: (image.alt = "Canada flag"),
-    question: "What is the capital of Canada?",
+    image: (image.src = "./assets/caterpie.png"),
+    alt: (image.alt = "image of caterpie"),
+    question: "Caterpie is what type of Pokemon?",
     answers: [
-      { text: "Vancouver", correct: false },
-      { text: "Toronto", correct: false },
-      { text: "Ottawa", correct: true },
-      { text: "Washington", correct: false },
+      { text: "Grass", correct: false },
+      { text: "Fire", correct: false },
+      { text: "Bug", correct: true },
+      { text: "Water", correct: false },
     ],
   },
   {
-    image: (image.src = "./assets/america.webp"),
-    alt: (image.alt = "= America flag"),
-    question: "What is the capital of America?",
+    image: (image.src = "./assets/ekans.webp"),
+    alt: (image.alt = "= image of ekans"),
+    question: "Ekans is what type of Pokemon?",
     answers: [
-      { text: "Florida", correct: false },
-      { text: "California", correct: false },
-      { text: "New york", correct: false },
-      { text: "Washington, D.C", correct: true },
+      { text: "Earth", correct: false },
+      { text: "Fire", correct: false },
+      { text: "Normal", correct: false },
+      { text: "Poison", correct: true },
     ],
   },
   {
-    image: (image.src = "./assets/japan.png"),
-    alt: (image.alt = "japan flag"),
-    question: "What is the capital of Japan?",
+    image: (image.src = "./assets/gengar.png"),
+    alt: (image.alt = "image of gengar"),
+    question: "Gengar is what type of Pokemon?",
     answers: [
-      { text: "Kyoto", correct: false },
-      { text: "Tokyo", correct: true },
-      { text: "Osaka", correct: false },
-      { text: "Hokkaido", correct: false },
+      { text: "Flying", correct: false },
+      { text: "Ghost", correct: true },
+      { text: "Normal", correct: false },
+      { text: "Psychic", correct: false },
     ],
   },
 ];
@@ -60,7 +60,7 @@ const quizOne = [
 const quizTwo = [
   {
     image: (image.src = "./assets/1.png"),
-    alt: (image.alt = "picture of pokemon"),
+    alt: (image.alt = "image of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Pikachu", correct: true },
@@ -71,7 +71,7 @@ const quizTwo = [
   },
   {
     image: (image.src = "./assets/2.png"),
-    alt: (image.alt = "picture of pokemon"),
+    alt: (image.alt = "image of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Abra", correct: false },
@@ -82,7 +82,7 @@ const quizTwo = [
   },
   {
     image: (image.src = "./assets/3.jpg"),
-    alt: (image.alt = "picture of pokemon"),
+    alt: (image.alt = "image of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Muk", correct: false },
@@ -93,7 +93,7 @@ const quizTwo = [
   },
   {
     image: (image.src = "./assets/4.png"),
-    alt: (image.alt = "picture of pokemon"),
+    alt: (image.alt = "image of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Ponyta", correct: false },
@@ -104,7 +104,7 @@ const quizTwo = [
   },
   {
     image: (image.src = "./assets/5.jpg"),
-    alt: (image.alt = "picture of pokemon"),
+    alt: (image.alt = "image of pokemon"),
     question: "What is the name of this Pokemon?",
     answers: [
       { text: "Slowbro", correct: false },
